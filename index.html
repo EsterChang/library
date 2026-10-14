@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <script src="script.js" defer></script>
+    <link rel="styleshet" href="style.css"></link>
+</head>
+<body>
+    <div class="library">
+        <button class="new-book-button" command="show-modal" commandfor="new-book-dialog">New Book</button>
+        <dialog id="new-book-dialog">
+            <form>
+                <p>Add a new book</p>
+                <label for="title">Title: </label>
+                <input type="text" id="title">
+
+                <label for="author">Author: </label>
+                <input type="text" id="author">
+
+                <button class="submit-button" type="submit">Submit</button>
+            </form>
+            <button class="close-button">Close</button>
+        </dialog>
+    </div>
+</body>
+</html>

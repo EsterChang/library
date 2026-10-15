@@ -1,12 +1,16 @@
 const myLibrary = [];
 
-function Book(title, author) {
-    const id = crypto.randomUUID();
-    this.id = id;
-    this.title = title;
-    this.author = author;
-    this.read = false;
-    this.changeStatus = function() {
+class Book {
+    constructor(title, author) {
+        this.title = title;
+        this.author = author;
+        
+        const id = crypto.randomUUID();
+        this.id = id;
+        this.read = false;
+    }
+
+    changeStatus() {
         this.read = !this.read;
     }
 }

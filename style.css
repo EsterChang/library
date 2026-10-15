@@ -1,0 +1,9 @@
+.library {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.book {
+    width: 500px;
+    height: 500px;
+}
